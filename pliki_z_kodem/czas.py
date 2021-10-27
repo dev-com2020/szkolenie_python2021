@@ -3,7 +3,7 @@ import time
 czas = time.localtime()
 print("Godzina", czas[3], "Minuta:", czas[4], "Sekunda:", czas[5])
 
-data = time.strftime("%B %d %Y, %H-%M:%S", time.localtime())
+data = time.strftime("%m.%d.%Y, %H-%M:%S", time.localtime())
 print(data)
 
 """
@@ -27,3 +27,6 @@ print(data)
   %Z - strefa czasowa, nazwa lub skrót
   %% - znak '%'
 """
+
+odlicznanie = time.sleep(60 - czas[5])
+print("koniec......")
